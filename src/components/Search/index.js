@@ -14,7 +14,7 @@ const Search = () => {
 
     const handleClick = (e) => {
         e.preventDefault();
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3ca5afa75f12717d4da7cefd2539a6d2`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3ca5afa75f12717d4da7cefd2539a6d2`)
             .then(response => response.json())
             .then(data => {
                 setCityData(data)
